@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emploi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../Question_2/question_2.xsd" promotion="2MGL">
+<seance day="Sunday" start="08:00:00" end="09:00:00" teacher="Ahmed" module="XML" salle="15"/><seance day="Sunday" start="09:00:00" end="11:00:00" teacher="Omar" module="Recherch" salle="7"/><seance day="Monday" start="08:00:00" end="12:00:00" teacher="Yacine" module="GPI" salle="7"/><seance day="Sunday" start="08:00:00" end="09:00:00" teacher="Ahmed" module="XML" salle="15"/><seance day="Wednesday" start="14:00:00" end="17:00:00" teacher="Omar" module="Maintenance" salle="7"/></emploi>

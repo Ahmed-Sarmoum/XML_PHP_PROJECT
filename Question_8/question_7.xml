@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<promotion option="GL" level="2">
+	<students>
+		<student insNum="1" firstname="Ahmed" lastname="SARMOUM" />
+		<student insNum="2" firstname="Amar" lastname="ould hamadouch" />
+		<student insNum="3" firstname="Ali" lastname="barça" />
+		<student insNum="4" firstname="Hocine " lastname="KERTEL" />
+	</students>
+	<modules>
+		<module modId="1" modName="XML" />
+		<module modId="2" modName="Maintenance des logiciels" />
+		<module modId="3" modName="Recherch bibiliographi" />
+		<module modId="4" modName="GPI" />
+		<module modId="5" modName="English" />
+	</modules>
+</promotion>

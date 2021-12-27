@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emploi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="question_2.xsd" promotion="2MGL">
+    <seance day="Sunday" start="08:00:00" end="09:00:00" teacher="nom1" module="M1" salle="Amphi"/>
+    <seance day="Sunday" start="09:00:00" end="11:00:00" teacher="nom2" module="M2" salle="2"/>
+    <seance day="Sunday" start="11:00:00" end="12:00:00" teacher="nom3" module="M1" salle="Amphi"/>
+    <seance day="Monday" start="11:00:00" end="12:00:00" teacher="nom4" module="M4" salle="Amphi"/>
+    <seance day="Monday" start="14:00:00" end="16:00:00" teacher="nom5" module="M1" salle="5"/>
+    <seance day="Tuesday" start="09:00:00" end="11:00:00" teacher="nom6" module="M2" salle="6"/>
+    <seance day="Tuesday" start="11:00:00" end="12:00:00" teacher="nom7" module="M1" salle="Amphi"/>
+    <seance day="Tuesday" start="14:00:00" end="15:00:00" teacher="nom8" module="M3" salle="8"/>
+    <seance day="Tuesday" start="15:00:00" end="17:00:00" teacher="nom13" module="M10" salle="Amphi"/>
+    <seance day="Wednesday" start="08:00:00" end="10:00:00" teacher="nom9" module="M7" salle="Amphi"/>
+    <seance day="Wednesday" start="10:00:00" end="12:00:00" teacher="nom3" module="M1" salle="2"/>
+    <seance day="Wednesday" start="14:00:00" end="15:00:00" teacher="nom2" module="M10" salle="Amphi"/>
+    <seance day="Thursday" start="08:00:00" end="11:00:00" teacher="nom1" module="M1" salle="1"/>
+</emploi>

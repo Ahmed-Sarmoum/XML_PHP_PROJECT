@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    
+    <xs:element name="promotion" type="promotion_type"></xs:element>
+    <xs:element name="students" type="students_type"></xs:element>
+    <xs:element name="modules" type="modules_type"></xs:element>
+    <xs:element name="student" type="student_type"></xs:element>
+    <xs:element name="module" type="module_type"></xs:element>
+    
+    <xs:complexType name="promotion_type">
+        <xs:sequence>
+            <xs:element ref="students" minOccurs="1" maxOccurs="unbounded"></xs:element>
+            <xs:element ref="modules" minOccurs="1" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+        <xs:attribute name="option" type="xs:string" use="required"></xs:attribute>
+        <xs:attribute name="level" type="xs:int" use="required"></xs:attribute>
+    </xs:complexType>
+    
+    <xs:complexType name="students_type">
+        <xs:sequence>
+            <xs:element ref="student" minOccurs="1" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="modules_type">
+        <xs:sequence>
+            <xs:element ref="module" minOccurs="1" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="student_type">
+        <xs:attribute name="insNum" type="xs:string" use="required"></xs:attribute>
+        <xs:attribute name="firstname" type="xs:string" use="required"></xs:attribute>
+        <xs:attribute name="lasname" type="xs:string" use="required"></xs:attribute>
+    </xs:complexType>
+    
+    <xs:complexType name="module_type">
+        <xs:attribute name="modId" type="xs:string" use="required"></xs:attribute>
+        <xs:attribute name="modName" use="required" type="xs:string"></xs:attribute>
+    </xs:complexType>
+    
+</xs:schema>

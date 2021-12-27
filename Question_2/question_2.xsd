@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+   
+   <xs:simpleType name="specType">
+       <xs:restriction base="xs:string">
+           <xs:pattern value="2MGL|2MGI|2MRT|1MGL|1MGI|1MRT|1L|2L|3L"></xs:pattern>
+       </xs:restriction>
+   </xs:simpleType> 
+    <xs:simpleType name="dayType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="Sunday|Monday|Tuesday|Wednesday|Thursday"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType> 
+    <xs:simpleType name="startDate">
+        <xs:restriction base="xs:time">
+            <xs:enumeration value="08:00:00"/>
+            <xs:enumeration value="09:00:00"/>
+            <xs:enumeration value="10:00:00"/>
+            <xs:enumeration value="11:00:00"/>
+            <xs:enumeration value="14:00:00"/>
+            <xs:enumeration value="15:00:00"/>
+        </xs:restriction>
+    </xs:simpleType>  
+    <xs:simpleType name="endDate">
+        <xs:restriction base="xs:time">
+            <xs:enumeration value="09:00:00"/>
+            <xs:enumeration value="10:00:00"/>
+            <xs:enumeration value="11:00:00"/>
+            <xs:enumeration value="12:00:00"/>  
+            <xs:enumeration value="15:00:00"/>
+            <xs:enumeration value="16:00:00"/>
+            <xs:enumeration value="17:00:00"/>
+        </xs:restriction>
+    </xs:simpleType> 
+    <xs:element name="seance">
+       <xs:complexType>
+           <xs:simpleContent>
+               <xs:extension base="xs:string">
+                   <xs:attribute name="day" type="dayType" use="required"></xs:attribute>
+                   <xs:attribute name="start" type="startDate" use="required"></xs:attribute>
+                   <xs:attribute name="end" type="endDate" use="required"></xs:attribute>
+                   <xs:attribute name="teacher" type="xs:string" use="required"></xs:attribute>
+                   <xs:attribute name="module" type="xs:string" use="required"></xs:attribute>
+                   <xs:attribute name="salle" type="xs:string" use="required"></xs:attribute>
+               </xs:extension>
+           </xs:simpleContent>
+       </xs:complexType>
+   </xs:element> 
+    <xs:element name="emploi">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="seance" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+            <xs:attribute name="promotion" type="specType" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element> 
+    
+</xs:schema>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<promotion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="question_6.xsd" option="GL" level="2">
+	<students>
+		<student insNum="1" firstname="ahmed" lasname="SARMOUM" />
+		<student insNum="2" firstname="hocine" lasname="KERTEL" />
+		<student insNum="3" firstname="moulay" lasname="zouwew" />
+	</students>
+	<modules>
+		<module modId="1" modName="web 2" />
+	</modules>
+</promotion>
